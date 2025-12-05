@@ -2,9 +2,7 @@
   "name": "kambaz-node-server-app",
   "version": "1.0.0",
   "description": "Node.js HTTP Web Server for Kambaz Application",
-
   "type": "module",
-
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -31,7 +29,8 @@
   },
   "homepage": "https://github.com/ArjunShatkin/kambaz-node-server-app#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
-    "cors": "^2.8.5"
+    "uuid": "^13.0.0"
   }
 }
