@@ -1,4 +1,4 @@
-[
+export default [
   {
     "_id": "M101",
     "name": "Introduction to Rocket Propulsion",
@@ -241,5 +241,5 @@
       { "_id": "L1006", "name": "Peacekeeping in Middle-earth", "module": "M803" }
     ]
   }
-]
+];
 

@@ -1,27 +1,35 @@
-import db from "../Database/index.js";
-import { v4 as uuidv4 } from "uuid";
+import User from './model.js';
 
-let { users } = db;
-
-export const createUser = (user) => {
-  const newUser = { ...user, _id: uuidv4() };
-  users = [...users, newUser];
-  return newUser;  // Make sure to return the new user
+export const createUser = async (user) => {
+  const newUser = await User.create(user);
+  return newUser;
 };
 
-export const findAllUsers = () => users;
+export const findAllUsers = async () => {
+  const users = await User.find();
+  return users;
+};
 
-export const findUserById = (userId) => 
-  users.find((user) => user._id === userId);
+export const findUserById = async (userId) => {
+  const user = await User.findById(userId);
+  return user;
+};
 
-export const findUserByUsername = (username) => 
-  users.find((user) => user.username === username);
+export const findUserByUsername = async (username) => {
+  const user = await User.findOne({ username });
+  return user;
+};
 
-export const findUserByCredentials = (username, password) =>
-  users.find((user) => user.username === username && user.password === password);
+export const findUserByCredentials = async (username, password) => {
+  const user = await User.findOne({ username, password });
+  return user;
+};
 
-export const updateUser = (userId, user) => 
-  (users = users.map((u) => (u._id === userId ? user : u)));
+export const updateUser = async (userId, userUpdates) => {
+  const user = await User.findByIdAndUpdate(userId, userUpdates, { new: true });
+  return user;
+};
 
-export const deleteUser = (userId) => 
-  (users = users.filter((u) => u._id !== userId));
+export const deleteUser = async (userId) => {
+  await User.findByIdAndDelete(userId);
+};

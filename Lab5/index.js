@@ -3,9 +3,7 @@ import QueryParameters from "./QueryParameters.js";
 import WorkingWithObjects from "./WorkingWithObjects.js";
 import CreateModule from "./CreateModule.js"
 import WorkingWithArrays from "./WorkingWithArrays.js";
-import cors from "cors";
 export default function Lab5(app) {
-    app.use(cors()); 
     app.get("/lab5/welcome", (req, res) => {
       res.send("Welcome to Lab 5");
     });

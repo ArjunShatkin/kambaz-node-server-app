@@ -1,4 +1,4 @@
-[
+export default [
     { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101", "line1": "Multiple Modules | Not Available Until May 1 at 12:00 p.m.", "line2": "Due Date May 7 at 11:59 p.m. | 100 pts" },
     { "_id": "A102", "title": "Combustion Analysis", "course": "RS101", "line1": "Multiple Modules | Not Available Until May 8 at 12:00 p.m.", "line2": "Due Date May 14 at 11:59 p.m. | 100 pts" },
     { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101", "line1": "Multiple Modules | Not Available Until May 15 at 12:00 p.m.", "line2": "Due Date May 21 at 11:59 p.m. | 100 pts" },
@@ -30,5 +30,5 @@
     { "_id": "A801", "title": "Diplomacy Case Study", "course": "RS108", "line1": "Multiple Modules | Not Available Until May 1 at 12:00 p.m.", "line2": "Due Date May 7 at 11:59 p.m. | 100 pts" },
     { "_id": "A802", "title": "Inter-species Treaty Analysis", "course": "RS108", "line1": "Multiple Modules | Not Available Until May 8 at 12:00 p.m.", "line2": "Due Date May 14 at 11:59 p.m. | 100 pts" },
     { "_id": "A803", "title": "Leadership Reflection Paper", "course": "RS108", "line1": "Multiple Modules | Not Available Until May 15 at 12:00 p.m.", "line2": "Due Date May 21 at 11:59 p.m. | 100 pts" }
-  ]
+  ];
   

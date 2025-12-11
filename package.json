@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "seed": "node Kambaz/Database/seed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,7 +31,9 @@
   "homepage": "https://github.com/ArjunShatkin/kambaz-node-server-app#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "mongoose": "^9.0.1",
     "uuid": "^13.0.0"
   }
 }
